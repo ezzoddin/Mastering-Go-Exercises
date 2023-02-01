@@ -10,7 +10,7 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		word := scanner.Text()
-		fmt.Println(">", scanner.Text())
+		fmt.Println(">", word)
 		if(word == "STOP"){
 			os.Exit(0)
 		}
